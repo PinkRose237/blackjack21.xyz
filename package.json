@@ -1,0 +1,6 @@
+{
+  "name": "blackjack21.xyz",
+  "dependencies": {
+    "wrangler": "^4.81.0"
+  }
+}

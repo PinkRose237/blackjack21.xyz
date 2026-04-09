@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack21.xyz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Blackjack21.xyz</h1>
+        <p>Learn the rules, understand the strategy, and beat the dealer.</p>
+    </header>
+
+    <main>
+        <section id="objective">
+            <h2>The Objective</h2>
+            <p>The goal of Blackjack is simple: beat the dealer's hand without going over 21. If your hand total is higher than the dealer's, or if the dealer busts (goes over 21), you win!</p>
+        </section>
+
+        <section id="card-values">
+            <h2>Card Values</h2>
+            <div class="card-grid">
+                <div class="card-info">
+                    <strong>2 - 10</strong>
+                    <p>Face value</p>
+                </div>
+                <div class="card-info">
+                    <strong>J, Q, K</strong>
+                    <p>10 points each</p>
+                </div>
+                <div class="card-info">
+                    <strong>Ace</strong>
+                    <p>1 or 11 points (whichever is better!)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rules">
+            <h2>How to Play</h2>
+            <ol>
+                <li><strong>The Deal:</strong> Each player and the dealer starts with two cards. One of the dealer's cards is face up.</li>
+                <li><strong>Your Turn:</strong> Choose to <strong>Hit</strong> (take another card) or <strong>Stand</strong> (keep your current total). You can also <strong>Double Down</strong> or <strong>Split</strong> in certain situations.</li>
+                <li><strong>The Dealer's Turn:</strong> Once all players are finished, the dealer reveals their hidden card and must Hit until they reach at least 17.</li>
+                <li><strong>The Result:</strong> If your total is closer to 21 than the dealer's, you win!</li>
+            </ol>
+        </section>
+
+        <section id="practice">
+            <h2>Interactive Strategy Practice</h2>
+            <p>Test your knowledge of Basic Strategy! What should you do in this situation?</p>
+            <div id="game-container">
+                <div id="dealer-hand" class="hand-display">
+                    <h3>Dealer Shows:</h3>
+                    <div id="dealer-cards" class="cards"></div>
+                </div>
+                <div id="player-hand" class="hand-display">
+                    <h3>Your Hand:</h3>
+                    <div id="player-cards" class="cards"></div>
+                    <p id="player-total-display">Total: <span id="player-total">0</span></p>
+                </div>
+                <div id="controls">
+                    <button id="hit-btn">Hit</button>
+                    <button id="stand-btn">Stand</button>
+                    <button id="double-btn">Double Down</button>
+                    <button id="split-btn" disabled>Split</button>
+                </div>
+                <div id="feedback" class="hidden">
+                    <p id="feedback-text"></p>
+                    <button id="next-btn">Next Scenario</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blackjack21.xyz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
